@@ -18,10 +18,10 @@ export class SingleMuseumComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private museumService: MuseumService) { }
 
   ngOnInit() {
-    
+
   }
 
 }

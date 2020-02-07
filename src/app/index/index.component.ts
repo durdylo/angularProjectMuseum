@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MuseumService } from '../services/openmuseum.service'
 
 @Component({
   selector: 'app-index',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
-
+  title = 'openmuseum';
+  museums: any[]
   ngOnInit() {
+    this.museums = this.museumService.museums;
   }
+  constructor(private museumService: MuseumService) { }
 
 }
