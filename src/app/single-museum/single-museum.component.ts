@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import {MuseumService} from '../services/openmuseum.service'
 
 @Component({
   selector: 'app-single-museum',
@@ -7,7 +8,6 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 
 export class SingleMuseumComponent implements OnInit {
-
   @Input()name:string;
   @Input()opening:string;
   @Input()zip:string;
@@ -21,6 +21,7 @@ export class SingleMuseumComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
