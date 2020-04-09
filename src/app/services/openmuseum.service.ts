@@ -212,4 +212,12 @@ export class MuseumService{
     dep: "BOUCHES DU RHONE"
   }
   ]
+  getMuseumById(reference:any) {
+   const museum = this.museums.find(
+     (s) => {
+       return s.reference === reference;
+     }
+   );
+   return museum;
+ }
 }

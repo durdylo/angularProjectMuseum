@@ -15,6 +15,8 @@ export class SingleMuseumComponent implements OnInit {
   @Input()telephone:string;
   @Input()adress:string;
   @Input()website:string;
+  // @Input()reference:any;
+
 
 
 

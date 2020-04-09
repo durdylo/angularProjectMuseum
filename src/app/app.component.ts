@@ -9,5 +9,5 @@ import { MuseumService } from './services/openmuseum.service'
 export class AppComponent {
   ngOnInit() {
   }
-  constructor() { }
+  constructor(private museumService: MuseumService) { }
 }
